@@ -1,0 +1,190 @@
+.bg-main {
+  background-image: url(https://enefti.modeltheme.com/wp-content/uploads/2022/02/Main-slider_pattern.jpg) !important;
+  background-position: center !important;
+  background-size: 100% !important;
+  background-repeat: no-repeat !important;
+}
+
+#first {
+  padding: 1rem 0;
+  border-top: 0.5px solid silver !important;
+  border-bottom: 0.5px solid silver !important;
+}
+#first a {
+  color: white !important;
+}
+#first button {
+  margin-left: 30px !important;
+  background-image: linear-gradient(to right, #D01498, #647ECB);
+}
+#first button:hover {
+  background-position: 100%;
+  transition: all 0.4s ease-in-out;
+}
+
+.navbar-nav a {
+  color: gray !important;
+  transition: 0.5s;
+}
+
+.navbar-nav a:hover {
+  color: rgb(103, 103, 103) !important;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+#search svg {
+  color: #3074f6;
+}
+#search a {
+  color: white;
+  text-decoration: none;
+}
+
+#nav-list li {
+  display: inline-block;
+}
+
+.btn-bg {
+  background-image: linear-gradient(to right, #D01498, #647ECB) !important;
+}
+
+#right-text h1 {
+  color: white !important;
+  line-height: 1.2 !important;
+  font-size: 50px !important;
+  letter-spacing: 1px;
+}
+#right-text h1 span {
+  background: linear-gradient(to right, #D01498, #647ECB) !important;
+}
+#right-text p {
+  color: silver;
+}
+
+.ml-10 {
+  margin-left: 9rem;
+}
+
+.h-a {
+  color: silver !important;
+  text-decoration: none;
+  transition: 0.5s;
+  border: 0.5px solid white;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: black;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.h-a:hover {
+  color: white !important;
+}
+
+.h-s {
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.h-s:hover {
+  color: #647ECB !important;
+}
+
+.h-i {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.h-i:hover {
+  opacity: 0.7;
+}
+
+.ml-svg {
+  margin-left: 5rem;
+}
+
+.shadow {
+  box-shadow: 0px 0px black;
+}
+
+#explore p {
+  color: silver;
+  cursor: pointer;
+}
+#explore span {
+  color: black;
+  cursor: pointer;
+  transition: 0.25s;
+}
+#explore span:hover {
+  color: #647ECB !important;
+}
+
+.price {
+  font-weight: bold;
+  color: black !important;
+}
+
+.border-x {
+  border: 1px solid #D01498 !important;
+}
+.border-x svg {
+  color: #D01498;
+}
+.border-x span {
+  color: #D01498 !important;
+}
+
+.border-y {
+  color: black !important;
+  border: 1px solid silver;
+  transition: 0.25s;
+  margin-left: 20px;
+}
+
+.border-y:hover {
+  color: #D01498 !important;
+  border: 1px solid #D01498 !important;
+}
+
+.text-silver {
+  color: silver !important;
+}
+
+#inside img {
+  border-radius: 50%;
+}
+
+.t-p {
+  color: black !important;
+  cursor: pointer !important;
+  transition: 0.25s !important;
+}
+
+.t-p:hover {
+  color: #647ECB !important;
+}
+
+.border-rad {
+  border: none !important;
+  border-radius: 10px !important;
+  transition: 0.25s;
+}
+
+.border-rad:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+.border-rad:hover img {
+  margin-top: -5px !important;
+}
+
+.br-50 {
+  border-radius: 50%;
+  background-color: #d01498;
+  height: 70px;
+  width: 70px;
+}/*# sourceMappingURL=style.css.map */

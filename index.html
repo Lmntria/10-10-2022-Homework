@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="bg-main">
+  <nav class="navbar navbar-expand-lg" id="first">
+    <div class="container">
+      <a class="navbar-brand" href="#">Discover, find and sell extraordinary NFT with us.</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" aria-current="page" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
+          </svg></a>
+          <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+          </svg></a>
+          <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+          </svg></a>
+          <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16">
+            <path d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z"/>
+          </svg></a>
+          <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+          </svg></a>
+          <button class="text-uppercase btn text-white">create nft</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container pt">
+    <div class="row py-3">
+      <div class="col-md-2 col-sm-12">
+        <a href="" class="navbar-brand"><img src="https://enefti.modeltheme.com/wp-content/themes/enefti/images/svg/logo.svg" alt=""></a>
+      </div>
+      <div class="col-md-10 col-sm-12">
+        <ul id="nav-list" class="d-flex d-inline-block justify-content-around">
+          <li  class="nav-item dropdown">
+            <a href="" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="text-capitalize">home</span></a>
+            <ul class="dropdown-menu">
+              <li class="text-capitalize"><a class="dropdown-item" href="#">Action</a></li>
+              <li class="text-capitalize"><a class="dropdown-item" href="#">Action</a></li>
+              <li class="text-capitalize"><a class="dropdown-item" href="#">Action</a></li>
+              <li class="text-capitalize"><a class="dropdown-item" href="#">Action</a></li>
+              <li class="text-capitalize"><a class="dropdown-item" href="#">Action</a></li>
+            </ul>
+          </li>
+          <li  class="nav-item dropdown">
+            <a href="" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="text-capitalize">collectors</span></a>
+            <ul class="dropdown-menu">
+              <li class="text-capitalize"><a class="dropdown-item" href="#">Action</a></li>
+              <li class="text-capitalize"><a class="dropdown-item" href="#">Action</a></li>
+              <li class="text-capitalize"><a class="dropdown-item" href="#">Action</a></li>
+              <li class="text-capitalize"><a class="dropdown-item" href="#">Action</a></li>
+              <li class="text-capitalize"><a class="dropdown-item" href="#">Action</a></li>
+            </ul>
+          </li>
+          <li  class="nav-item dropdown">
+            <a href="" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="text-capitalize">neft marketplace</span></a>
+            <ul class="dropdown-menu">
+              <li class="text-capitalize"><a class="dropdown-item" href="#">Action</a></li>
+              <li class="text-capitalize"><a class="dropdown-item" href="#">Action</a></li>
+              <li class="text-capitalize"><a class="dropdown-item" href="#">Action</a></li>
+              <li class="text-capitalize"><a class="dropdown-item" href="#">Action</a></li>
+              <li class="text-capitalize"><a class="dropdown-item" href="#">Action</a></li>
+            </ul>
+          </li>
+          <li  class="nav-item dropdown">
+            <a href="" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="text-capitalize">features</span></a>
+            <ul class="dropdown-menu">
+              <li class="text-capitalize"><a class="dropdown-item" href="#">Action</a></li>
+              <li class="text-capitalize"><a class="dropdown-item" href="#">Action</a></li>
+              <li class="text-capitalize"><a class="dropdown-item" href="#">Action</a></li>
+              <li class="text-capitalize"><a class="dropdown-item" href="#">Action</a></li>
+              <li class="text-capitalize"><a class="dropdown-item" href="#">Action</a></li>
+            </ul>
+          </li>
+          <li  class="nav-item dropdown">
+            <a href="" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="text-capitalize">pages</span></a>
+            <ul class="dropdown-menu">
+              <li class="text-capitalize"><a class="dropdown-item" href="#">Action</a></li>
+              <li class="text-capitalize"><a class="dropdown-item" href="#">Action</a></li>
+              <li class="text-capitalize"><a class="dropdown-item" href="#">Action</a></li>
+              <li class="text-capitalize"><a class="dropdown-item" href="#">Action</a></li>
+              <li class="text-capitalize"><a class="dropdown-item" href="#">Action</a></li>
+            </ul>
+          </li>
+          <li  class="nav-item dropdown">
+            <a href="" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="text-capitalize">help</span></a>
+            <ul class="dropdown-menu">
+              <li class="text-capitalize"><a class="dropdown-item" href="#">Action</a></li>
+              <li class="text-capitalize"><a class="dropdown-item" href="#">Action</a></li>
+              <li class="text-capitalize"><a class="dropdown-item" href="#">Action</a></li>
+              <li class="text-capitalize"><a class="dropdown-item" href="#">Action</a></li>
+              <li class="text-capitalize"><a class="dropdown-item" href="#">Action</a></li>
+            </ul>
+          </li>
+          <li  class="nav-item dropdown">
+            <a href="" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="text-capitalize">purchase</span></a>
+            <ul class="dropdown-menu">
+              <li class="text-capitalize"><a class="dropdown-item" href="#">Action</a></li>
+              <li class="text-capitalize"><a class="dropdown-item" href="#">Action</a></li>
+              <li class="text-capitalize"><a class="dropdown-item" href="#">Action</a></li>
+              <li class="text-capitalize"><a class="dropdown-item" href="#">Action</a></li>
+              <li class="text-capitalize"><a class="dropdown-item" href="#">Action</a></li>
+            </ul>
+          </li>
+          <li  class="nav-item">
+            <div class="nav-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg>
+              <a href="#" class="text-capitalize">sign in</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <header class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <img width="740" height="513" src="https://enefti.modeltheme.com/wp-content/uploads/2022/02/Main-slider_pic-1536x1065.jpg" alt="" class="">
+        </div>
+        <div class="col-md-5" id="right-text">
+          <h1 class="pt-5 px-2">Discover, Collect & Sell <span class="text-col">Extraordinary</span> NFTs</h1>
+          <p class="px-2 pt-3 pb-3">The Crypto Monkey is a high-quality collection of 100 unique monkeys on the NFTMart marketplace.</p>
+          <a href="" class="btn border-1 mx-2 px-4 py-2 btn-bg"><span class="fw-bold text-white">DISCOVER</span></a>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+<section id="collections" class="bg-main">
+  <div class="container">
+    <h2 class="text-capitalize text-white pb-4">Trending collections</h2>
+    <div class="row pb-5">
+      <div class="col-md-3">
+        <div class="card bg-dark" style="width: 20rem;">
+          <div class="row">
+            <div class="col-md-6 overflow-hidden">
+              <div class="mr-3 mb-3 "><img src="https://enefti.modeltheme.com/wp-content/uploads/2022/01/QmfYZdU7ARHdMtvc3ZdGNsbSRjxnYzFmedSjVzSpoXocKp-149x100.png" alt="" class="h-i"></div>
+              <div class="mr-3 mb-1"><img src="https://enefti.modeltheme.com/wp-content/uploads/2022/02/3327-149x100.png" alt=""></div>
+            </div>
+            <div class="col-md-6 overflow-hidden">
+              <div class="mr-3 mb-3"><img src="https://enefti.modeltheme.com/wp-content/uploads/2022/02/3332-1-149x100.png" alt=""></div>
+              <div class="mr-3 mb-1"><img src="https://enefti.modeltheme.com/wp-content/uploads/2022/02/9944.png-149x100.png" alt=""></div>
+            </div>
+          </div>
+          <div class="card-body bg-dark">
+            <span class="h-s">Doodles</span>
+            <a href="#" class="ml-10 h-a">12 items</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card bg-dark" style="width: 20rem;">
+          <div class="row">
+            <div class="col-md-6 overflow-hidden">
+              <div class="mr-3 mb-3"><img src="https://enefti.modeltheme.com/wp-content/uploads/2022/01/QmfYZdU7ARHdMtvc3ZdGNsbSRjxnYzFmedSjVzSpoXocKp-149x100.png" alt=""></div>
+              <div class="mr-3 mb-1"><img src="https://enefti.modeltheme.com/wp-content/uploads/2022/02/3327-149x100.png" alt=""></div>
+            </div>
+            <div class="col-md-6 overflow-hidden">
+              <div class="mr-3 mb-3"><img src="https://enefti.modeltheme.com/wp-content/uploads/2022/02/3332-1-149x100.png" alt=""></div>
+              <div class="mr-3 mb-1"><img src="https://enefti.modeltheme.com/wp-content/uploads/2022/02/9944.png-149x100.png" alt=""></div>
+            </div>
+          </div>
+          <div class="card-body bg-dark">
+            <span class="h-s">Doodles</span>
+            <a href="" class="ml-10 h-a">12 items</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card bg-dark" style="width: 20rem;">
+          <div class="row">
+            <div class="col-md-6 overflow-hidden">
+              <div class="mr-3 mb-3"><img src="https://enefti.modeltheme.com/wp-content/uploads/2022/01/QmfYZdU7ARHdMtvc3ZdGNsbSRjxnYzFmedSjVzSpoXocKp-149x100.png" alt=""></div>
+              <div class="mr-3 mb-1"><img src="https://enefti.modeltheme.com/wp-content/uploads/2022/02/3327-149x100.png" alt=""></div>
+            </div>
+            <div class="col-md-6 overflow-hidden">
+              <div class="mr-3 mb-3"><img src="https://enefti.modeltheme.com/wp-content/uploads/2022/02/3332-1-149x100.png" alt=""></div>
+              <div class="mr-3 mb-1"><img src="https://enefti.modeltheme.com/wp-content/uploads/2022/02/9944.png-149x100.png" alt=""></div>
+            </div>
+          </div>
+          <div class="card-body bg-dark">
+            <span class="h-s">Doodles</span>
+            <a href="" class="ml-10 h-a">12 items</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card bg-dark" style="width: 20rem;">
+          <div class="row">
+            <div class="col-md-6 overflow-hidden">
+              <div class="mr-3 mb-3"><img src="https://enefti.modeltheme.com/wp-content/uploads/2022/01/QmfYZdU7ARHdMtvc3ZdGNsbSRjxnYzFmedSjVzSpoXocKp-149x100.png" alt=""></div>
+              <div class="mr-3 mb-1"><img src="https://enefti.modeltheme.com/wp-content/uploads/2022/02/3327-149x100.png" alt=""></div>
+            </div>
+            <div class="col-md-6 overflow-hidden">
+              <div class="mr-3 mb-3"><img src="https://enefti.modeltheme.com/wp-content/uploads/2022/02/3332-1-149x100.png" alt=""></div>
+              <div class="mr-3 mb-1"><img src="https://enefti.modeltheme.com/wp-content/uploads/2022/02/9944.png-149x100.png" alt=""></div>
+            </div>
+          </div>
+          <div class="card-body bg-dark">
+            <span class="h-s">Doodles</span>
+            <a href="#" class="ml-10 h-a">12 items</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="explore">
+  <div class="container">
+    <div class="d-flex justify-content-between">
+      <div class="d-inline-block pt-3">
+        <span class="text-capitalize h1 p-4">Explore Nft<span>s</span></span>
+      </div>
+      <div class="d-inline-block pt-3 p-4">
+        <a href="" class="btn border-x"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+        </svg><span>ALL NFTs</span></a>
+        <a href="" class="btn border-y"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list-columns-reverse" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M0 .5A.5.5 0 0 1 .5 0h2a.5.5 0 0 1 0 1h-2A.5.5 0 0 1 0 .5Zm4 0a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1h-10A.5.5 0 0 1 4 .5Zm-4 2A.5.5 0 0 1 .5 2h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm4 0a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5Zm-4 2A.5.5 0 0 1 .5 4h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm4 0a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5Zm-4 2A.5.5 0 0 1 .5 6h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm4 0a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 0 1h-8a.5.5 0 0 1-.5-.5Zm-4 2A.5.5 0 0 1 .5 8h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm4 0a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 0 1h-8a.5.5 0 0 1-.5-.5Zm-4 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm4 0a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1h-10a.5.5 0 0 1-.5-.5Zm-4 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm4 0a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5Zm-4 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm4 0a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5Z"/>
+        </svg> Sale Type</a>
+        <a href="" class="btn border-y"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list-columns-reverse" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M0 .5A.5.5 0 0 1 .5 0h2a.5.5 0 0 1 0 1h-2A.5.5 0 0 1 0 .5Zm4 0a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1h-10A.5.5 0 0 1 4 .5Zm-4 2A.5.5 0 0 1 .5 2h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm4 0a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5Zm-4 2A.5.5 0 0 1 .5 4h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm4 0a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5Zm-4 2A.5.5 0 0 1 .5 6h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm4 0a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 0 1h-8a.5.5 0 0 1-.5-.5Zm-4 2A.5.5 0 0 1 .5 8h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm4 0a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 0 1h-8a.5.5 0 0 1-.5-.5Zm-4 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm4 0a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1h-10a.5.5 0 0 1-.5-.5Zm-4 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm4 0a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5Zm-4 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm4 0a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5Z"/>
+        </svg> Fixed Price</a>
+      </div>
+    </div>
+    <div class="row p-4 gy-4">
+      <div class="col-md-3">
+        <div class="card shadow">
+          <img src="https://enefti.modeltheme.com/wp-content/uploads/2022/08/2.jpg" class="card-img-top p-3" alt="">
+          <div class="card-body">
+            <span class="card-title h5">Pomeranian Doge</span>
+            <span class="ml-svg"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+              <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+            </svg></span>
+            <hr>
+            <p>Reserve Price</p>
+            <p class="price">£4.44</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card shadow">
+          <img src="https://enefti.modeltheme.com/wp-content/uploads/2022/08/10.jpg" class="card-img-top p-3" alt="...">
+          <div class="card-body">
+            <span class="card-title h5">Pomeranian Doge</span>
+            <span class="ml-svg"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+              <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+            </svg></span>
+            <hr>
+            <p>Reserve Price</p>
+            <p class="price">£6.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card shadow">
+          <img src="https://enefti.modeltheme.com/wp-content/uploads/2022/08/5.jpg" class="card-img-top p-3" alt="...">
+          <div class="card-body">
+            <span class="card-title h5">Pomeranian Doge</span>
+            <span class="ml-svg"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+              <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+            </svg></span>
+            <hr>
+            <p>Reserve Price</p>
+            <p class="price">£9.99</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card shadow">
+          <img src="https://enefti.modeltheme.com/wp-content/uploads/2022/08/3.jpg" class="card-img-top p-3" alt="...">
+          <div class="card-body">
+            <span class="card-title h5">Pomeranian Doge</span>
+            <span class="ml-svg"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+              <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+            </svg></span>
+            <hr>
+            <p>Reserve Price</p>
+            <p class="price">£4.96</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card shadow">
+          <img src="https://enefti.modeltheme.com/wp-content/uploads/2022/08/6.jpg" class="card-img-top p-3" alt="...">
+          <div class="card-body">
+            <span class="card-title h5">Pomeranian Doge</span>
+            <span class="ml-svg"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+              <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+            </svg></span>
+            <hr>
+            <p>Reserve Price</p>
+            <p class="price">£2.56</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card shadow">
+          <img src="https://enefti.modeltheme.com/wp-content/uploads/2022/08/8.jpg" class="card-img-top p-3" alt="...">
+          <div class="card-body">
+            <span class="card-title h5">Pomeranian Doge</span>
+            <span class="ml-svg"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+              <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+            </svg></span>
+            <hr>
+            <p>Reserve Price</p>
+            <p class="price">£1.93</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card shadow">
+          <img src="https://enefti.modeltheme.com/wp-content/uploads/2022/08/9.jpg" class="card-img-top p-3" alt="...">
+          <div class="card-body">
+            <span class="card-title h5">Pomeranian Doge</span>
+            <span class="ml-svg"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+              <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+            </svg></span>
+            <hr>
+            <p>Reserve Price</p>
+            <p class="price">£11.00</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card shadow">
+          <img src="https://enefti.modeltheme.com/wp-content/uploads/2022/08/4.jpg" class="card-img-top p-3" alt="...">
+          <div class="card-body">
+            <span class="card-title h5">Pomeranian Doge</span>
+            <span class="ml-svg"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+              <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+            </svg></span>
+            <hr>
+            <p>Reserve Price</p>
+            <p class="price">£7.40</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="trend" class="p-5 bg-light">
+  <div class="container">
+    <div class="head">
+      <p class="h1">Trending Collectors</p>
+      <p class="text-silver">Fine art collectors are in a upward this week</p>
+    </div>
+    <div class="row gy-4">
+      <div class="col-md-3">
+        <div class="card bg-white p-4 border-rad flex-row align-items-center">
+          <div class="col-md-3" id="inside">
+            <img src="https://enefti.modeltheme.com/wp-content/uploads/2022/01/4a65a51a.png-70x70.png" alt="">
+          </div>
+          <div class="col-md-7 mx-3" id="text">
+            <p class="h4 t-p">PhantaBear...</p>
+            <span>7 items</span>
+          </div>
+          <div class="col-md-2">
+            <span class="h1 fw-bold text-light">1</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card bg-white p-4 border-rad flex-row align-items-center">
+          <div class="col-md-3" id="inside">
+            <img src="https://enefti.modeltheme.com/wp-content/uploads/2022/01/QmVQE36eU6mZsHjDVTP1vY1Hw9ix3XEwAhWtDRJ23NktxK-70x70.png" alt="">
+          </div>
+          <div class="col-md-7 mx-3" id="text">
+            <p class="h4 t-p">Doodles</p>
+            <span>12 items</span>
+          </div>
+          <div class="col-md-2">
+            <span class="h1 fw-bold text-light">2</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card bg-white p-4 border-rad flex-row align-items-center">
+          <div class="col-md-3" id="inside">
+            <img src="https://enefti.modeltheme.com/wp-content/uploads/2022/02/Main-collection_img1-70x70.png" alt="">
+          </div>
+          <div class="col-md-7 mx-3" id="text">
+            <p class="h4 t-p">FoxFam</p>
+            <span>18 items</span>
+          </div>
+          <div class="col-md-2">
+            <span class="h1 fw-bold text-light">3</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card bg-white p-4 border-rad flex-row align-items-center">
+          <div class="col-md-3" id="inside">
+            <img src="https://enefti.modeltheme.com/wp-content/uploads/2022/02/Main-collector_img2-70x70.png" alt="">
+          </div>
+          <div class="col-md-7 mx-3" id="text">
+            <p class="h4 t-p">Avid Lines</p>
+            <span>6 items</span>
+          </div>
+          <div class="col-md-2">
+            <span class="h1 fw-bold text-light">4</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card bg-white p-4 border-rad flex-row align-items-center">
+          <div class="col-md-3" id="inside">
+            <img src="https://enefti.modeltheme.com/wp-content/uploads/2022/02/Main-collector_img3-70x70.jpg" alt="">
+          </div>
+          <div class="col-md-7 mx-3" id="text">
+            <p class="h4 t-p">Lucky Zeros...</p>
+            <span>4 items</span>
+          </div>
+          <div class="col-md-2">
+            <span class="h1 fw-bold text-light">5</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card bg-white p-4 border-rad flex-row align-items-center">
+          <div class="col-md-3" id="inside">
+            <img src="https://enefti.modeltheme.com/wp-content/uploads/2022/02/9981.png-70x70.png" alt="">
+          </div>
+          <div class="col-md-7 mx-3" id="text">
+            <p class="h4 t-p">Azuki</p>
+            <span>6 items</span>
+          </div>
+          <div class="col-md-2">
+            <span class="h1 fw-bold text-light">6</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card bg-white p-4 border-rad flex-row align-items-center">
+          <div class="col-md-3" id="inside">
+            <img src="https://enefti.modeltheme.com/wp-content/uploads/2022/02/9977.png-70x70.png" alt="">
+          </div>
+          <div class="col-md-7 mx-3" id="text">
+            <p class="h4 t-p">Coolman's</p>
+            <span>6 items</span>
+          </div>
+          <div class="col-md-2">
+            <span class="h1 fw-bold text-light">7</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card bg-white p-4 border-rad flex-row align-items-center">
+          <div class="col-md-3" id="inside">
+            <img src="https://enefti.modeltheme.com/wp-content/uploads/2022/02/Main-collector_img6-70x70.png" alt="">
+          </div>
+          <div class="col-md-7 mx-3" id="text">
+            <p class="h4 t-p">Archetype</p>
+            <span>6 items</span>
+          </div>
+          <div class="col-md-2">
+            <span class="h1 fw-bold text-light">8</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="sell" class="bg-main p-5">
+  <div class="container ">
+    <p class="text-white h1 text-center py-5">Create and Sell Your NFTs</p>
+    <div class="row gy-3 ">
+      <div class="col-md-3">
+        <div class="br-50 d-flex justify-content-center my-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-wallet-fill align-self-center text-white" viewBox="0 0 16 16">
+            <path d="M1.5 2A1.5 1.5 0 0 0 0 3.5v2h6a.5.5 0 0 1 .5.5c0 .253.08.644.306.958.207.288.557.542 1.194.542.637 0 .987-.254 1.194-.542.226-.314.306-.705.306-.958a.5.5 0 0 1 .5-.5h6v-2A1.5 1.5 0 0 0 14.5 2h-13z"/>
+            <path d="M16 6.5h-5.551a2.678 2.678 0 0 1-.443 1.042C9.613 8.088 8.963 8.5 8 8.5c-.963 0-1.613-.412-2.006-.958A2.679 2.679 0 0 1 5.551 6.5H0v6A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-6z"/>
+          </svg>
+        </div>
+        <p class="h3 text-white">Set up your Wallet</p>
+        <p class="text-silver">Et ligula ullamcorper malesuada proin libero nunc consequat. Sagittis aliquam malesuada bibendum arcu.</p>
+      </div>
+      <div class="col-md-3">
+        <div class="br-50 d-flex justify-content-center my-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-wallet-fill align-self-center text-white" viewBox="0 0 16 16">
+            <path d="M1.5 2A1.5 1.5 0 0 0 0 3.5v2h6a.5.5 0 0 1 .5.5c0 .253.08.644.306.958.207.288.557.542 1.194.542.637 0 .987-.254 1.194-.542.226-.314.306-.705.306-.958a.5.5 0 0 1 .5-.5h6v-2A1.5 1.5 0 0 0 14.5 2h-13z"/>
+            <path d="M16 6.5h-5.551a2.678 2.678 0 0 1-.443 1.042C9.613 8.088 8.963 8.5 8 8.5c-.963 0-1.613-.412-2.006-.958A2.679 2.679 0 0 1 5.551 6.5H0v6A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-6z"/>
+          </svg>
+        </div>
+        <p class="h3 text-white">Create your Collection</p>
+        <p class="text-silver">At in tellus integer feugiat scelerisque varius morbi enim nunc. Faucibus ornare suspendisse sed nisi lacus.</p>
+      </div>
+      <div class="col-md-3">
+        <div class="br-50 d-flex justify-content-center my-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-wallet-fill align-self-center text-white" viewBox="0 0 16 16">
+            <path d="M1.5 2A1.5 1.5 0 0 0 0 3.5v2h6a.5.5 0 0 1 .5.5c0 .253.08.644.306.958.207.288.557.542 1.194.542.637 0 .987-.254 1.194-.542.226-.314.306-.705.306-.958a.5.5 0 0 1 .5-.5h6v-2A1.5 1.5 0 0 0 14.5 2h-13z"/>
+            <path d="M16 6.5h-5.551a2.678 2.678 0 0 1-.443 1.042C9.613 8.088 8.963 8.5 8 8.5c-.963 0-1.613-.412-2.006-.958A2.679 2.679 0 0 1 5.551 6.5H0v6A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-6z"/>
+          </svg>
+        </div>
+        <p class="h3 text-white">Set up your Wallet</p>
+        <p class="text-silver">Et ligula ullamcorper malesuada proin libero nunc consequat. Sagittis aliquam malesuada bibendum arcu.</p>
+      </div>
+      <div class="col-md-3">
+        <div class="br-50 d-flex justify-content-center my-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-wallet-fill align-self-center text-white" viewBox="0 0 16 16">
+            <path d="M1.5 2A1.5 1.5 0 0 0 0 3.5v2h6a.5.5 0 0 1 .5.5c0 .253.08.644.306.958.207.288.557.542 1.194.542.637 0 .987-.254 1.194-.542.226-.314.306-.705.306-.958a.5.5 0 0 1 .5-.5h6v-2A1.5 1.5 0 0 0 14.5 2h-13z"/>
+            <path d="M16 6.5h-5.551a2.678 2.678 0 0 1-.443 1.042C9.613 8.088 8.963 8.5 8 8.5c-.963 0-1.613-.412-2.006-.958A2.679 2.679 0 0 1 5.551 6.5H0v6A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-6z"/>
+          </svg>
+        </div>
+        <p class="h3 text-white">Set up your Wallet</p>
+        <p class="text-silver">Et ligula ullamcorper malesuada proin libero nunc consequat. Sagittis aliquam malesuada bibendum arcu.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
